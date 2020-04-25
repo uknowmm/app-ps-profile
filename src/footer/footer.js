@@ -11,22 +11,20 @@ function footer() {
 				<div
 					className='container-fluid text-center text-md-left'
 					style={{ backgroundColor: 'aquamarine', padding: '30px' }}>
-					<div className='row'>
-						<div className='col-3 offset-1' style={{ textAlign: 'center' }}>
+					<div className='row d-flex justify-content-between'>
+						<div className='col-md-3 col-xs-2' style={{ textAlign: 'center' }}>
 							<img src={Loc} alt='broken' style={{ width: '50px', height: '50px' }} />
 							<h3 className='mt-2'>Location</h3>
 							<p className='text-muted'>Shive Ganga layout, mahadevapura,bangalore - 560048</p>
 						</div>
 
-						<hr className='clearfix w-100 d-md-none pb-3' />
-
-						<div className='col-3 offset-1'>
+						<div className='col-md-3 col-xs-2'>
 							<img src={Contact} alt='broken' style={{ width: '50px', height: '50px' }} />
 							<h3 className='mt-2'>Contact</h3>
 							<p className='text-muted'>(+91)- 8277495923</p>
 						</div>
 
-						<div className='col-3 offset-1'>
+						<div className='col-md-2 col-xs-2'>
 							<img src={Email} alt='broken' style={{ width: '50px', height: '50px' }} />
 							<h3 className='mt-2'>Email</h3>
 							<p className='text-muted'>prateek1992.ps@gmail.com</p>
