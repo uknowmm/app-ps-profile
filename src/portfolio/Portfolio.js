@@ -282,7 +282,7 @@ class Portfolio extends Component {
 					</div>
 				</div>
 				<div className='details-container d-flex justify-content-center'>
-					<div className='port_heading'>Gallary</div>
+					<div className='port_heading'>Gallery</div>
 				</div>
 				<Gallary />
 				<Footer />
