@@ -31,7 +31,7 @@ function footer() {
 						</div>
 					</div>
 				</div>
-				<div className='footer-copyright text-center py-3 text-color' style={{ backgroundColor: 'gray' }}>
+				<div className='footer-copyright text-center py-3 text-color' style={{ backgroundColor: 'dimgray' }}>
 					Made with ♥ by Prateek, using Reactjs, Copyright © 2020. All Rights Reserved
 				</div>
 			</footer>

@@ -11,7 +11,7 @@ import jslogo from '../assets/js-logo.png';
 import bootlogo from '../assets/boot-logo.jpg';
 import htmllogo from '../assets/html5logo.png';
 import nodelogo from '../assets/nodejs-logo.png';
-import javalogo from '../assets/jvm-logo.webp';
+import javalogo from '../assets/java-logo.jpg';
 import dynalogo from '../assets/dynatrace-logo.png';
 import developer from '../assets/tech.png';
 import cv from '../assets/prateek_sharma(Resume).pdf';
@@ -55,6 +55,7 @@ class Portfolio extends Component {
 					editIcon='fas fa-user-edit'
 					userIcon='fas fa-user-circle'
 				/>
+				<div className='bg-black' />
 				<div className='row'>
 					<div className='col-md-3 col-xs-2 offset-md-2'>
 						<div className='rotate' style={{ textAlign: 'center' }}>
@@ -165,48 +166,38 @@ class Portfolio extends Component {
 				<div className='achivement-container d-flex' style={{ justifyContent: 'space-around' }}>
 					<div className='rotate'>
 						<div className='star award d-flex align-items-center justify-content-center'>
-							<div className='year_heading' style={{ fontSize: '40px' }}>
-								5
-							</div>
+							<div className='award_heading'>5</div>
 						</div>
 						<p className='achivement-level'>Project</p>
 					</div>
 					<div className='rotate'>
 						<div className='star award d-flex align-items-center justify-content-center'>
-							<div className='year_heading' style={{ fontSize: '40px' }}>
-								40+
-							</div>
+							<div className='award_heading'>40+</div>
 						</div>
 						<p className='achivement-level'>Story</p>
 					</div>
 					<div className='rotate'>
 						<div className='star award d-flex align-items-center justify-content-center'>
-							<div className='year_heading' style={{ fontSize: '40px' }}>
-								600+
-							</div>
+							<div className='award_heading'>600+</div>
 						</div>
 						<p className='achivement-level'>Bugs</p>
 					</div>
 					<div className='rotate'>
 						<div className='star award d-flex align-items-center justify-content-center'>
-							<div className='year_heading' style={{ fontSize: '40px' }}>
-								100%
-							</div>
+							<div className='award_heading'>100%</div>
 						</div>
 						<p className='achivement-level'>Team Work</p>
 					</div>
 					<div className='rotate'>
 						<div className='star award d-flex align-items-center justify-content-center'>
-							<div className='year_heading' style={{ fontSize: '40px' }}>
-								85%
-							</div>
+							<div className='award_heading'>85%</div>
 						</div>
 						<p className='achivement-level'>Creativity</p>
 					</div>
 				</div>
 				<div className='skill-container' style={{ textAlign: 'center' }}>
 					<div className='port_heading'>Project and Technical Skill</div>
-					<div style={{ marginTop: '10%' }}>
+					<div className='parent-container'>
 						<div className='circle-container'>
 							<p className='msg_heading text-muted mt-6' style={{ textAlign: 'center' }}>
 								Project#1: Dewdrops
