@@ -8,6 +8,10 @@
 	--danger-color: #dc3545;
 	--success-color: #28a745;
 }
+html {
+	overflow-x: hidden;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -20,6 +24,7 @@ body {
 	line-height: 1.6;
 	background-color: #010101;
 	color: #333;
+	overflow-x: hidden;
 }
 
 .bg {
@@ -227,7 +232,7 @@ body {
 }
 
 .parent-container {
-	margin-top: 160px;
+	margin-top: 100px;
 }
 
 .path_heading {
@@ -245,7 +250,7 @@ body {
 }
 
 .details-container {
-	margin-top: 160px;
+	margin-top: 100px;
 }
 
 a {
@@ -435,6 +440,12 @@ img {
 	margin-right: 1em;
 }
 
+.project-container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
 @media screen and (max-width: 400px) {
 	.bio-container {
 		text-align: center;
@@ -491,13 +502,5 @@ img {
 	}
 	.deg360 {
 		transform: rotate(-90deg) translate(10em) rotate(90deg);
-	}
-
-	.parent-container {
-		margin-top: 5%;
-	}
-
-	.details-container {
-		margin-top: 335%;
 	}
 }

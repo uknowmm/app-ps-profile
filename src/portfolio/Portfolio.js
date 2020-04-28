@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Nav from '../nav/Nav';
 import Gallary from '../gallary/gallary';
 import Footer from '../footer/footer';
+import Project from '../project/project';
 
 import Profile from '../assets/profile.png';
 import Flag from '../assets/flag.png';
@@ -13,14 +14,13 @@ import htmllogo from '../assets/html5logo.png';
 import nodelogo from '../assets/nodejs-logo.png';
 import javalogo from '../assets/java-logo.jpg';
 import dynalogo from '../assets/dynatrace-logo.png';
-import developer from '../assets/tech.png';
+import developer from '../assets/mongo-logo.png';
 import cv from '../assets/prateek_sharma(Resume).pdf';
 
 class Portfolio extends Component {
 	state = {
 		url: 'https://www.linkedin.com/in/prateek-sharma-b5512aa4',
 		text: 'Hire Me',
-		visibility: false,
 		cv: cv
 	};
 
@@ -30,14 +30,6 @@ class Portfolio extends Component {
 
 	mouseLeave = () => {
 		this.setState({ text: 'Hire Me' });
-	};
-
-	showChild = () => {
-		this.setState({ visibility: true });
-	};
-
-	hideChild = () => {
-		this.setState({ visibility: false });
 	};
 
 	openProfile = () => {
@@ -195,83 +187,42 @@ class Portfolio extends Component {
 						<p className='achivement-level'>Creativity</p>
 					</div>
 				</div>
+
+				<div className='d-flex justify-content-center' style={{ marginTop: '40px' }}>
+					<div className='port_heading'>Project</div>
+				</div>
+				<Project />
+
 				<div className='skill-container' style={{ textAlign: 'center' }}>
-					<div className='port_heading'>Project and Technical Skill</div>
+					<div className='port_heading'>Technical Skills</div>
 					<div className='parent-container'>
 						<div className='circle-container'>
-							<p className='msg_heading text-muted mt-6' style={{ textAlign: 'center' }}>
-								Project#1: Dewdrops
-							</p>
-							<p className='text-muted text-color' style={{ textAlign: 'center' }}>
-								Developed various common/core presentation as well as business level angular components
-								to be used in more than 4 products like tabset, dropdown, jump-to, numeric directive and
-								tax Component. Also involved in bug fixes and enhancement of common component
-							</p>
-							<p className='msg_heading text-muted' style={{ textAlign: 'center' }}>
-								Project#2: Einvoice
-							</p>
-							<p className='text-muted text-color' style={{ textAlign: 'center' }}>
-								Zycus e-Invoicing software enables suppliers to transmit electronic invoices and
-								automates receiving and invoice-matching processes for both PO and non-PO based
-								invoices.nvolved in code refactoring of application and worked on transition page,
-								checkout page and submission of PO and non-PO invoice
-							</p>
-							<div
-								className='circle center shake'
-								onMouseEnter={this.showChild}
-								onMouseLeave={this.hideChild}
-								style={{ visibility: !show ? 'visible' : 'hidden' }}>
-								<img src={developer} alt='aa' />
+							<div className='circle center shake'>
+								<img src={reclogo} alt='aa' />
 							</div>
-
-							<p className='msg_heading text-muted' style={{ textAlign: 'center' }}>
-								Project#3: iAnalyze
-							</p>
-							<p className='text-muted text-color' style={{ textAlign: 'center' }}>
-								Integated the high charts in the product and worked on spend-miner and opportunity
-								module of the product
-							</p>
-							<p className='msg_heading text-muted' style={{ textAlign: 'center' }}>
-								Project#4: Eproc
-							</p>
-							<p className='text-muted text-color' style={{ textAlign: 'center' }}>
-								Guides shoppers seamlessly to best-value purchasing decisions and delivers an unrivalled
-								consumer-like shopping experience. Worked on line Item details and bug fixes on various
-								pages of the product
-							</p>
-							<p className='msg_heading text-muted' style={{ textAlign: 'center' }}>
-								Project#5: APM tool & Automation
-							</p>
-							<p className='text-muted text-color' style={{ textAlign: 'center' }}>
-								The APM Shop and Automation Team involve in cleaning and configuring the event in infra
-								monitoring tools like Dynatrace, Dcrum and Event Correlation, making sense of a large
-								number of events and pinpointing the few events that are really important in that mass
-								of information by looking for and analysing relationships between events and automating
-								the repetitive task. Involved in Business Process Automation
-							</p>
-							<div className='deg0 circle' style={{ visibility: !show ? 'visible' : 'hidden' }}>
+							<div className='deg0 circle'>
 								<img src={dynalogo} alt='aa' />
 							</div>
-							<div className='deg45 circle' style={{ visibility: !show ? 'visible' : 'hidden' }}>
+							<div className='deg45 circle'>
 								<img src={jslogo} alt='aa' />
 							</div>
-							<div className='deg90 circle' style={{ visibility: !show ? 'visible' : 'hidden' }}>
-								<img src={bootlogo} alt='aa' />
+							<div className='deg90 circle'>
+								<img src={developer} alt='aa' />
 							</div>
-							<div className='deg135 circle' style={{ visibility: !show ? 'visible' : 'hidden' }}>
+							<div className='deg135 circle'>
 								<img src={htmllogo} alt='aa' />
 							</div>
-							<div className='deg180 circle' style={{ visibility: !show ? 'visible' : 'hidden' }}>
+							<div className='deg180 circle'>
 								<img src={nodelogo} alt='aa' />
 							</div>
-							<div className='deg225 circle' style={{ visibility: !show ? 'visible' : 'hidden' }}>
-								<img src={anglogo} alt='aa' />
+							<div className='deg225 circle'>
+								<img src={bootlogo} alt='aa' />
 							</div>
-							<div className='deg315 circle' style={{ visibility: !show ? 'visible' : 'hidden' }}>
+							<div className='deg315 circle'>
 								<img src={javalogo} alt='aa' />
 							</div>
-							<div className='deg360 circle' style={{ visibility: !show ? 'visible' : 'hidden' }}>
-								<img src={reclogo} alt='aa' />
+							<div className='deg360 circle'>
+								<img src={anglogo} alt='aa' />
 							</div>
 						</div>
 					</div>
