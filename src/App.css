@@ -250,7 +250,7 @@ body {
 }
 
 .details-container {
-	margin-top: 100px;
+	margin-top: 120px;
 }
 
 a {
@@ -446,7 +446,7 @@ img {
 	text-align: center;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
 	.bio-container {
 		text-align: center;
 	}

@@ -2,7 +2,7 @@ import React from 'react';
 
 function project() {
 	return (
-		<div className='project-container'>
+		<div className='project-container ml-4 mr-4'>
 			<div className='mt-4'>
 				<p className='path_heading text-muted'>Dewdrops</p>
 				<p className='text-color'>A suite of various Zycus products</p>
