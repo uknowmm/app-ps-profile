@@ -233,7 +233,7 @@ body {
 .path_heading {
 	font-weight: 700;
 	font-family: 'Josefin Sans';
-	line-height: 0;
+	font-size: 1.5rem;
 }
 
 .career-container {

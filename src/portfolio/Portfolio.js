@@ -5,7 +5,7 @@ import Footer from '../footer/footer';
 
 import Profile from '../assets/profile.png';
 import Flag from '../assets/flag.png';
-import reclogo from '../assets/react.webp';
+import reclogo from '../assets/react.png';
 import anglogo from '../assets/angular-logo.svg';
 import jslogo from '../assets/js-logo.png';
 import bootlogo from '../assets/boot-logo.jpg';
