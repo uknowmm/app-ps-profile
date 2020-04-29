@@ -21,7 +21,22 @@ class Portfolio extends Component {
 	state = {
 		url: 'https://www.linkedin.com/in/prateek-sharma-b5512aa4',
 		text: 'Hire Me',
-		cv: cv
+		cv: cv,
+		startAnimation: false
+	};
+
+	componentDidMount() {
+		window.addEventListener('scroll', this.handleScroll, true);
+	}
+
+	componentWillUnmount() {
+		window.removeEventListener('scroll', this.handleScroll);
+	}
+
+	handleScroll = () => {
+		const top = window.pageYOffset + window.innerHeight,
+			isVisible = top > this.ref.offsetTop ? true : false;
+		this.setState({ startAnimation: isVisible });
 	};
 
 	mouseEnter = () => {
@@ -37,8 +52,7 @@ class Portfolio extends Component {
 	};
 
 	render() {
-		const show = this.state.visibility;
-		console.log(show);
+		console.log(this.state.startAnimation);
 		return (
 			<div>
 				<Nav
@@ -196,32 +210,32 @@ class Portfolio extends Component {
 				<div className='skill-container' style={{ textAlign: 'center' }}>
 					<div className='port_heading'>Technical Skills</div>
 					<div className='parent-container'>
-						<div className='circle-container'>
-							<div className='circle center shake'>
+						<div className='circle-container' ref={(ctx) => (this.ref = ctx)}>
+							<div className='circle center'>
 								<img src={reclogo} alt='aa' />
 							</div>
-							<div className='deg0 circle'>
+							<div className={`${this.state.startAnimation ? 'deg0' : ''} ${'circle'}`}>
 								<img src={dynalogo} alt='aa' />
 							</div>
-							<div className='deg45 circle'>
+							<div className={`${this.state.startAnimation ? 'deg45' : ''} ${'circle'}`}>
 								<img src={jslogo} alt='aa' />
 							</div>
-							<div className='deg90 circle'>
+							<div className={`${this.state.startAnimation ? 'deg90' : ''} ${'circle'}`}>
 								<img src={developer} alt='aa' />
 							</div>
-							<div className='deg135 circle'>
+							<div className={`${this.state.startAnimation ? 'deg135' : ''} ${'circle'}`}>
 								<img src={htmllogo} alt='aa' />
 							</div>
-							<div className='deg180 circle'>
+							<div className={`${this.state.startAnimation ? 'deg180' : ''} ${'circle'}`}>
 								<img src={nodelogo} alt='aa' />
 							</div>
-							<div className='deg225 circle'>
+							<div className={`${this.state.startAnimation ? 'deg225' : ''} ${'circle'}`}>
 								<img src={bootlogo} alt='aa' />
 							</div>
-							<div className='deg315 circle'>
+							<div className={`${this.state.startAnimation ? 'deg315' : ''} ${'circle'}`}>
 								<img src={javalogo} alt='aa' />
 							</div>
-							<div className='deg360 circle'>
+							<div className={`${this.state.startAnimation ? 'deg360' : ''} ${'circle'}`}>
 								<img src={anglogo} alt='aa' />
 							</div>
 						</div>
