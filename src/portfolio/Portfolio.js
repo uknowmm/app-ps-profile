@@ -4,7 +4,7 @@ import Gallary from '../gallary/gallary';
 import Footer from '../footer/footer';
 import Project from '../project/project';
 
-import Profile from '../assets/profile.png';
+import Profile from '../assets/IMG-prt.jpg';
 import Flag from '../assets/flag.png';
 import reclogo from '../assets/react.png';
 import anglogo from '../assets/angular-logo.svg';
